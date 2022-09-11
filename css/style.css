@@ -1,0 +1,32 @@
+div {
+    height: 350px;
+    width: 800px;
+    box-shadow: 0px 0px 10px #000;
+  }
+  .cursor {
+    margin-left: 0.25em;
+    animation: blinkMe 1.2s linear infinite;
+    -webkit-animation: blinkMe 1.2s linear infinite;
+}
+  h1{
+      text-shadow: 0px -4px 3px #ffffff;
+  }
+  @keyframes blinkMe {
+    0% {
+      opacity: 0;
+    }
+    49% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @media screen and (max-width:460px){
+      div{
+          width: fit-content;
+      }
+  }
